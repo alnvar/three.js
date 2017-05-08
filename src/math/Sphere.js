@@ -13,9 +13,7 @@ function Sphere( center, radius ) {
 
 }
 
-Sphere.prototype = {
-
-	constructor: Sphere,
+Object.assign( Sphere.prototype, {
 
 	set: function ( center, radius ) {
 
@@ -176,7 +174,7 @@ Sphere.prototype = {
 
 	}
 
-};
+} );
 
 
 export { Sphere };

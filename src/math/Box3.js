@@ -13,9 +13,7 @@ function Box3( min, max ) {
 
 }
 
-Box3.prototype = {
-
-	constructor: Box3,
+Object.assign( Box3.prototype, {
 
 	isBox3: true,
 
@@ -483,7 +481,7 @@ Box3.prototype = {
 
 	}
 
-};
+} );
 
 
 export { Box3 };
